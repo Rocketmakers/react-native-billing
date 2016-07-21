@@ -36,6 +36,9 @@ public class InAppBillingBridge extends ReactContextBaseJavaModule implements Ac
         reactContext.addActivityEventListener(this);
     }
 
+    public void onNewIntent(Intent intent){
+    }
+
     public InAppBillingBridge(ReactApplicationContext reactContext) {
         super(reactContext);
         _reactContext = reactContext;
